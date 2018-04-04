@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="canonical" href="http://www.html5doctor.com/i-b-em-strong-element/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>The i, b, em, and strong elements | HTML5 Doctor</title>
+  <meta name="author" content="Tamara Camacho">
+</head>
+<body>
+      <div class="page-header">
+        <h1>HTML5<small>DOCTOR</small></h1>
+        <h6>Helping you implement HTML5 today</h6>
+      </div>
+
+    <main>
+      <div id="Menu">
+        <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#Ingredients">ARCHIVE</a></li>
+        <li><a href="#Directions">ELEMENT INDEX</a></li>
+        <li><a href="#house">RESOURCES</a></li>
+        <li class="search">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+              <button type="submit" class="btn btn-default">🔍</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div id="pagetitle">
+            <h3>The i, b, em, and strong elements</h3>
+            <h6>Tuesday, <time datetime="2010-03-9">March 9th, 2010</time> by <a href="http://html5doctor.com/author/olib/Oli">Studholme</a></h6>
+          </div>
+
+          <section id="intro">
+            <div class="content1">
+              <p>
+                While many HTML4 elements have been brought into HTML5 essentially unchanged, several historically presentational ones have been given semantic meanings.
+              </p>
+            </div>
+
+            <div class="content">
+              <p>
+                Let’s look at <code>&lt;i&gt;</code> and <code>&lt;b&gt;</code> and compare them to the semantic stalwarts <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code>. In summary:
+              </p>
+              <p>
+                <ul>
+                  <li><code>&lt;i&gt;</code>—was italic, now for <i>text in an “alternate voice”</i>, such as transliterated foreign words, technical terms, and typographically italicized text (<a href="http://w3c.github.io/html-reference/i.html">W3C:Markup</a>, <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element">WHATWG</a>)</li>
+                  <li><code>&lt;b&gt;</code>—was bold, now for <i>“stylistically offset” text</i>, such as keywords and typographically emboldened text (<a href="http://w3c.github.io/html-reference/b.html">W3C:Markup</a>, <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element">WHATWG</a>)</li>
+                  <li><code>&lt;em&gt;</code>—was emphasis, now for <i>stress emphasis</i>, i.e., something you’d pronounce differently (<a href="http://w3c.github.io/html-reference/em.html">W3C:Markup</a>, <a href"https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element">WHATWG</a>)</li>
+                  <li><code>&lt;strong&gt;</code>—was for stronger emphasis, now for <i>strong importance</i>, basically the same thing (stronger emphasis or importance is now indicated by nesting) (<a href="http://w3c.github.io/html-reference/strong.html">W3C:Markup</a>, <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element">WHATWG</a></li>
+                </ul>
+              </p>
+            </div>
+          </section>
+
+          <section id="sec2">
+            <h4>Giving presentational elements new semantic meanings</h4>
+            <div class="content">
+              <p>
+                <code>&lt;i&gt;</code> and <code>&lt;b&gt;</code> were <a href="https://www.w3.org/TR/html401/present/graphics.html#h-15.2.1">HTML4 font style elements</a> and are still used presentationally where appropriate to follow typographic conventions. They now have semantic meaning, however, and their style can be changed via CSS, meaning they’re not <em>only</em> presentational—<code>&lt;b&gt;</code>, for example, doesn’t have to be bold. Because of this, <strong>it’s recommended to use classes to indicate meaning</strong> to make it easy to change the style later.
+              </p>
+            </div>
+          </section>
+
+          <section id="ibox">
+            <h5>The <code>&lt;i&gt;</code> element</h5>
+              <blockquote>
+                <p>
+                  The i element represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose in a manner indicating a different quality of text, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, a thought, or a ship name in Western texts.
+                </p>
+                <footer>
+                  <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element">HTML — Living Standard<a>, <cite title="Source Title">WHATWG</cite>
+                </footer>
+              </blockquote>
+
+            <div class="content">
+              <p>Other things that are typically italicised include transliterated foreign words (using the attribute <code>lang=""</code>), inline stage directions in a script, some musical notation, and when representing hand-written text inline:
+              </p>
+            </div>
+
+              <blockquote>
+                <p>
+                  DECKARD: Move! Get out of the way!<br>
+                  <span class="narration">Deckard fires. Kills Zhora in dramatic slow motion scene.</span><br>
+                  DECKARD:<span class="voiceover">The report would be routine retirement of a replicant which didn’t make me feel any better about shooting a woman in the back. There it was again. Feeling, in myself. For her, for Rachael.</span><br>
+                  DECKARD: Deckard. B-263-54.
+                </p>
+              </blockquote>
+
+            <div id="vobox">
+            <div class="content2">
+              <p>
+                Using <code>&lt;i class="voiceover"&gt;</code> to indicate a voiceover (alternate mood)
+              </p>
+            </div>
+            </div>
+
+              <blockquote>
+                <p>
+                  <span class="charaspeak">We ate <i lang="ja-latn">unagi</i>, <i lang="ja-latn">aburi-zake</i>, and <i lang="ja-latn">tako</i> sushi last night, but the <i lang="ja-latn">toro</i> sushi was all fished out.
+                  </span>
+                </p>
+              </blockquote>
+
+            <div class="content2">
+              <p>
+                Using <code>&lt;i lang="ja-latn"&gt;</code> to indicate a transliterated word from a foreign language (with <code>lang="ja-latn"</code> indicating transliterated Japanese). To check character sets for <code>lang=""</code> values you can use the (ouch), or the excellent <a href="https://r12a.github.io/app-subtags/">Language Subtag Lookup tool by Richard Ishida, W3C</a>
+              </p>
+            </div>
+
+              <blockquote>
+                <p>
+                  <i class="taxonomy">Nanotyrannus</i> (“dwarf tyrant”) is a genus of tyrannosaurid dinosaur, and is possibly a juvenile specimen of <i class="taxonomy">Tyrannosaurus</i>. It is based on CMN 7541, a skull collected in 1942 and described by Charles W. Gilmore described in 1946, who gave it the new species <i class="taxonomy">Gorgosaurus lancensis</i>.
+                </p>
+              </blockquote>
+
+            <div class="content2">
+              <p>
+                Using <code>&lt;i class="taxonomy"&gt;</code> for taxonomic names.
+              </p>
+            </div>
+
+            <div class="content">
+              <p>
+                Only use <code>&lt;i&gt;</code> when nothing more suitable is available — e.g., <code>&lt;em&gt;</code> for text with stress emphasis, <code>&lt;strong&gt;</code> for text with semantic importance, <code>&lt;cite&gt;</code> for titles in a citation or bibliography,<code>&lt;dfn&gt;</code> for the defining instance of a word, and <code>&lt;var&gt;</code> for mathematical variables. Use CSS instead for italicizing blocks of text, such as asides, verse, and (as used here for W3C specification quote) block quotations. Remember to use the <code>class</code> attribute to identify why the element is being used, making it easy to restyle a particular use. You can target <code>lang</code> in CSS using the attribute selector (eg <code>[lang="ja-latn"]</code>). Full sentences of foreign prose should generally be set in quotes in their own paragraph (or blockquote), and should <em>not</em> use <code>&lt;i&gt;</code> (add the <code>lang</code> attribute to the containing element).
+              </p>
+            </div>
+          </section>
+
+          <section id="bbox">
+          <h5>The <code>&lt;b&gt;</code> element</h5>
+          <blockquote>
+            <p>
+                The b element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede.
+            </p>
+            <footer>
+              <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element">HTML — Living Standard<a>, <cite title="Source Title">WHATWG</cite>
+            </footer>
+          </blockquote>
+
+          <div class="content">
+            <p>
+              For <code>&lt;b&gt;</code> text that should merely look different, there is no requirement to use <code>font-style: bold;</code>— other styling could include a round-cornered background, larger font size, different color, or formatting such as small caps. For instance, in the <a href="#vobox">script example above</a>, <code>&lt;b class="narration"&gt;</code> is used to indicate who’s speaking or narrating.
+            </p>
+            <p>
+              Text that is bold by typographic convention (and <strong>not</strong> because it’s more important) could include names in a Hollywood gossip column or the initial text on a complex or traditionally designed page:
+            </p>
+          </div>
+
+          <div class="content3">
+            <p class="textsample">
+              <b class="opening-phrase">It was nearly one o'clock</b> when Sherlock Holmes returned from his excursion. He held in his hand a sheet of blue paper, scrawled over with notes and figures.
+            </p>
+          </div>
+
+          <div class="content2">
+            <p>
+              Connecting the versal (drop cap) with the text using <code>&lt;b class="opening-phrase"&gt;</code>. The pseudo-element selector <code>:first-letter</code> is used to create the versal. In this case, the opening phrase is bold only for stylistic reasons, but if it was semantically important, <code>&lt;strong&gt;</code> or some other element would be more appropriate. <del>Note that <code>:first-letter</code> only applies to block-level elements, so the versal “I” is not inside <code>&lt;b&gt;</code></del>.
+            </p>
+          </div>
+
+          <div class="content3">
+            <p class="textexample">
+              <span class="opening-phrase2">On glancing over my notes of the seventy odd cases in which</span> I have during the last eight years studied the methods of my freind Sherlock Holmes, I find many tragc, some comic, a large number merely strange, but none commonplace; for,
+              </p>
+          </div>
+
+          <div class="content2">
+            <p>
+              While we can use <code>&lt;b&gt;</code> to apply a traditional typographic style like small-caps to the first word, phrase or sentence, the CSS pseudo-element selector <code>:first-line</code> is more appropriate in this case. For the first paragraph of <a href="https://www.html5doctor.com">HTML5Doctor.com</a> articles we use the nifty <code>:first-of-type</code> CSS3 pseudo-class selector.
+            </p>
+          </div>
+
+          <div class="content">
+            <p>
+              Only use <code>&lt;b&gt;</code> when there are no other more suitable elements — e.g., <code>&lt;strong&gt;</code> for text with semantic importance, <code>&lt;em&gt;</code> for emphasized text (text with “stress emphasis”), <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code> for titles, and <code>&lt;mark&gt;</code> for highlighted or marked text. Use classes on list items for a <a href="https://html.spec.whatwg.org/multipage/links.html#tag-clouds">tag cloud</a>. To recreate traditional typographic effects, use CSS <a href="https://www.w3.org/TR/CSS2/selector.html#pseudo-element-selectors"> pseudo-element selectors</a> like <code>:first-line</code> and <code>:first-letter</code> where appropriate. Again, remember to use the <code>class</code> attribute to identify why the element is being used, making it easy to restyle a particular use.
+            </p>
+          </div>
+        </section>
+
+        <section id="sec5">
+          <h4>…and for comparison, the <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> elements</h4>
+
+          <blockquote>
+            <p>
+              While <code>&lt;em&gt;</code> and <code>&lt;strong&gt;</code> have remained pretty much the same, there has been a slight realignment in their meanings.In HTML4 they meant ‘emphasis’ and ‘strong emphasis’. Now their meanings have been differentiated into <code>&lt;em&gt;</code> representing <em>stress emphasis</em> (i.e., something you’d pronounce differently), and <code>&lt;strong&gt;</code> representing <em>importance</em>.
+            </p>
+          </blockquote>
+        </section>
+
+        <section id="embox">
+          <h5>The <code>&lt;em&gt;</code> element</h5>
+          <blockquote>
+            <p>
+              The em element represents stress emphasis of its contents.
+            </p>
+            <footer>
+              <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element">HTML — Living Standard<a>, <cite title="Source Title">WHATWG</cite>
+            </footer>
+          </blockquote>
+
+          <div class="content">
+            <p>
+              The ‘stress’ being referred to is linguistic. If spoken, this stress would be emphasised pronunciation on a word that can change the nuance of a sentence. For example, “Call a <em>doctor</em> now!” emphasises the importance of calling a doctor, perhaps in reply to someone asking “Should I get a nurse?” In contrast, “Call a doctor <em>now</em>!” emphasises the importance of calling immediately.
+            </p>
+            <p>
+              Use <code>&lt;strong&gt;</code> instead to indicate importance and <code>&lt;i&gt;</code> when you want italics without implying emphasis. The level of nesting represents the level of emphasis.
+            </p>
+          </div>
+        </section>
+
+        <section id="strongbox">
+          <h5>The <code>&lt;strong&gt;</code> element</h5>
+
+          <blockquote>
+            <p>
+              The strong element represents strong importance for its contents.
+            </p>
+            <footer>
+              <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element">HTML — Living Standard<a>, <cite title="Source Title">WHATWG</cite>
+            </footer>
+          </blockquote>
+
+          <div class="content">
+            <p>
+              Not much more to say really — it’s the <code>&lt;strong&gt;</code> we all know so well. Indicate relative importance by nesting <code>&lt;strong&gt;</code> elements, and use <code>&lt;em&gt;</code> for text with stress emphasis, or <code>&lt;b&gt;</code> for text that is “stylistically offset” or bold without being more important.
+            </p>
+          </div>
+        </section>
+
+        <section id="sec8">
+          <h4>In summation…</h4>
+          <div class="content">
+            <p>
+              A final thing to note: these elements (and almost all HTML5 elements) have also been made explicitly <em>media-independent</em>, meaning their semantics are not tied to how they look in a visual browser.
+            </p>
+            <p>
+              So there you have it — two stray dogs of presentational HTML4 have been transformed into meaningful HTML5 elements, ready to be adopted into your coding once again. Can <em>you</em> resist their semantically shiny puppy-dog eyes? Let us know!
+            </p>
+          </div>
+        </section>
+
+        <section id="sec9">
+        <h5>Changes</h5>
+          <div class="content">
+            <p>
+              <time datetime="2010-01-31">2010.01.31</time> I’ve updated mentions of using <code>&lt;i&gt;</code> for foreign words to be specifically <em>transliterated</em> foreign words (what I was meaning), based on feedback in the comments. I’ve also updated spec quotes.
+            </p>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+        <section id="sidecolumn">
+
+          <div class="separator"><h6>ELEMENT INDEX</h6>
+            <figure>
+              <img src="">
+            </figure>
+            <h6>ELEMENT INDEX</h6>
+          </div>
+
+          <div class="separator">
+            <h6>CATEGORY</h6>
+            <ul>
+              <li><a href="#home">ELEMENTS</a></li>
+            </ul>
+          </div>
+
+          <div class="separator">
+            <h6>TAGS</h6>
+            <ul>
+              <li><a href="#ibox">i</a></li>
+              <li><a href="#bbox">b</a></li>
+              <li><a href="#embox">em</a></li>
+              <li><a href="#strongbox">strong</a></li>
+            </ul>
+          </div>
+
+          <div class="separator">
+            <h6>TRANSLATIONS</h6>
+            <ul>
+              <li><a href="#home">日本語</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

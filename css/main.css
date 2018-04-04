@@ -1,0 +1,87 @@
+html{
+  font: 100%/1.15 sans-serif;
+}
+
+body{
+font-family: "calibri";
+  font-size: 1em;
+  font-weight:lighter;
+  color: #696969;
+  background-color: #efefef;
+  border-style: hidden;
+  margin: 0 auto;
+}
+
+.page-header{
+  height:200px;
+  background: red;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  max-width: 60em;
+  min-width: 20%;
+  border: hidden;
+  box-shadow: 0px 6px 25px 6px #c6c6c6;
+  margin: 0 auto;
+  position: relative;
+  top:-52px;
+}
+
+
+nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #e8e8e3;
+   background-image: -webkit-linear-gradient(bottom, #e8e8e3 0%, #f4f4f1 100%);
+    }
+
+nav li {
+  display:block;
+  padding: 7px 8px;
+  float: left;
+
+  }
+
+nav li:hover{
+  display: block;
+  padding: 7px 8px 7px 8px;
+  background: #49494b;
+  transition: background 0.5s ease-in-out;
+  }
+
+nav li a {
+    display: block;
+    color: #49494b;
+    padding:4px 16px;
+    text-decoration: none;
+    border: double #49494b 3px;
+    border-left: hidden;
+    border-right: hidden;
+  }
+
+nav li a:hover {
+    display: block;
+    color: white;
+    text-decoration: none;
+    border: double white 3px;
+    border-left: hidden;
+    border-right: hidden;
+  }
+
+  .search {
+      float: right;
+  }
+
+div.form-group {
+  float: right;
+  margin: 0px 5px;
+
+}
+
+@media (min-width:900px) {
+
+}
