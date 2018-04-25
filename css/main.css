@@ -261,7 +261,7 @@ blockquote {
    text-decoration: none;
    cursor: pointer;
    color: #ed5565;
-   dont-weight: lighter;
+   font-weight: lighter;
  }
 
  blockquote a:hover{
