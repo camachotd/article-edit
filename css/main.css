@@ -24,7 +24,7 @@ h1 {
 }
 
 .pageh1 {
-  font-family: 'Poiret One';
+  font-family: 'Poiret One', serif;
   border: solid whitesmoke 1px;
   font-size:60px;
   background: whitesmoke;
@@ -34,7 +34,7 @@ h1 {
 
 .pageh2 {
   color: whitesmoke;
-  font-family: 'poiret One';
+  font-family: 'poiret One',serif;
   letter-spacing: 10px;
   position: relative;
   top:-10px;
@@ -129,12 +129,12 @@ h6 {
 
 .col-md-3 a {
   color:  #e83e8c;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 
 .col-md-9 a {
   color:  #e83e8c;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   font-size: 90%;
 }
 
@@ -153,7 +153,7 @@ h6 {
 h3 {
   border-bottom: lightgrey solid 1px;
   padding: 20px 0px 5px 0px;
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 900;
   color:black;
   margin-left: auto;
@@ -171,7 +171,7 @@ a:hover{
 }
 
 .content1 {
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text',serif;
   border: dotted 1px #595959;
   border-top:hidden;
   border-bottom: hidden;
@@ -202,7 +202,7 @@ code {
 
 h4 {
   padding: 0px 0px 10px 20px;
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond',serif;
   font-weight: 900;
   color:black;
   margin-left: auto;
@@ -270,7 +270,7 @@ blockquote {
 
  blockquote i,
  blockquote em{
-   font-family: 'Poiret One';
+   font-family: 'Poiret One',serif;
    font-style: italic;
    font-weight: bolder;
  }
@@ -291,7 +291,7 @@ blockquote {
  blockquote h1 code{
    color:#da4453;
    border:hidden;
-   font-family: 'Montserrat';
+   font-family: 'Montserrat',sans-serif;
    background: white;
  }
 
@@ -302,10 +302,10 @@ blockquote {
 
  span.Cgrapefruit{
   color:#da4453;
-  font-family: 'Crimson text';
+  font-family: 'Crimson text',serif;
 }
 footer {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat',sans-serif;
   color: black;
   text-align: right;
 }
@@ -322,7 +322,7 @@ footer {
 }
 
 .content2 {
-  font-family: 'Crimson Text';
+  font-family: 'Crimson Text',serif;
   border: dotted 1px #595959;
   border-top:hidden;
   border-bottom: hidden;
@@ -358,7 +358,7 @@ footer {
 
 .opening-phrase2 {
   text-transform: uppercase;
-  font-family: Georgia;
+  font-family: Georgia,serif;
   color: Black;
   font-size: 70%;
   font-weight: 600;
@@ -368,7 +368,7 @@ footer {
   color: Black;
    float: left;
    clear:right;
-   font-family: 'Berkshire Swash';
+   font-family: 'Berkshire Swash',cursive;
    font-size: 400%;
    line-height: 100%;
    padding-top: 0px;
